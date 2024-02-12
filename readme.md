@@ -6,15 +6,16 @@
 
 ## Linkki netissä pyörivään sivustoon
 
-TODO: Spinnaa sivu pyörimään pilveen
+https://joonaskoivu.github.io
 
 ## Mitkä asiat teit
 
-Teitkö jotain puutteellisesti? Mitä jätit tekemättä?
+Osa sivun tyylittelyistä puuttuu, mutta muutoin tehtävään liittyvät asiat toteutettu.
 
 ## Mikä tehtävässä oli haastavaa? Muuttuiko sivusto matkan varrella alkuperäisestä suunnitelmastasi?
 
+CSS kanssa pelleily oli ehdottomasti eniten aikaa vievää.
 
 ## Paljonko käytit tunteja kierrokseen?
 
-Arvio tunnin tarkkuudella riittää.
+~35 h
