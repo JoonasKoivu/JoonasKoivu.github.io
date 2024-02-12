@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My portfolio</title>
+  <!-- kutsutaan tyylitiedostoa tässä -->
+  <link rel="stylesheet" href="../styles/index.css" />
+  <link rel="icon" type="image/x-icon" href="/images/favicon_io/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d3205356e2.js" crossorigin="anonymous"></script>
+  <script src="../helpers.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="navigation-container">
+      <h2 class="name">Joonas Koivu</h2>
+      <span class="menuIcon" onclick="toggleNav()">
+        <i class="fa-solid fa-bars fa-xl" id="menuIcon"></i>
+      </span>
+      <nav class="navOverlay" id="navOverlay">
+        <div class="overlay-content">
+          <div class="nav-page-links">
+            <a href="../index.html">About</a>
+            <a href="#/pages/skills.html">Career</a>
+            <a href="/pages/projects.html">Projects</a>
+            <a href="#/pages/contact.html">Contact</a>
+          </div>
+          <div class="socials">
+            <a href="https://www.linkedin.com/in/joonas-koivu/">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.telegram.com">
+              <i class="fab fa-telegram"></i>
+            </a>
+            <a href="https://open.spotify.com/playlist/0aGwFrklxi4txlaHI6EERv?si=38117290136c4bce">
+              <i class="fab fa-spotify"></i>
+            </a>
+          </div>
+        </div>
+    </div>
+    </nav>
+  </header>
+  <div class="main-container">
+    <main>
+      <section class="content-container">
+        <article>
+          <h2 class="sub-header">Here are some of the projects I've done</h2>
+          <div class="project-container">
+            <a href="#project1" style="text-decoration:none; color: #1e1e1e;">
+              <div class="project-card">
+                <h3>Project Name - 1</h3>
+                <p class="project-description">
+                  Small summary of the project and it’s motivation. Liirum larum doros elos sit amet.
+                </p>
+                <p class="project-stack">
+                  Tech stack: React, mongoDB, NodeJS
+                </p>
+                <hr />
+              </div>
+            </a>
+            <a href="#project2" style="text-decoration:none; color: #1e1e1e;">
+              <div class="project-card">
+                <h3>The Longest Ever Project Name - 2</h3>
+                <p class="project-description">
+                  Small summary of the project and it’s motivation. Liirum larum doros elos sit amet.
+                </p>
+                <p class="project-stack">
+                  Tech stack: Python, PostgreSQL, Flask
+                </p>
+                <hr />
+              </div>
+            </a>
+            <a href="#project3" style="text-decoration:none; color: #1e1e1e;">
+              <div class="project-card">
+                <h3>Longer Project Name - 3</h3>
+                <p class="project-description">
+                  Small summary of the project and it’s motivation. Liirum larum doros elos sit amet.
+                </p>
+                <p class="project-stack">
+                  Tech stack: React, mongoDB, NodeJS
+                </p>
+                <hr />
+              </div>
+            </a>
+            <a href="#project4" style="text-decoration:none; color: #1e1e1e;">
+              <div class="project-card">
+                <h3>Project Name - 4</h3>
+                <p class="project-description">
+                  Small summary of the project and it’s motivation. Liirum larum doros elos sit amet.
+                </p>
+                <p class="project-stack">
+                  Tech stack: Python, PostgreSQL, Flask
+                </p>
+                <hr />
+              </div>
+            </a>
+        </article>
+      </section>
+    </main>
+  </div>
+  <footer>
+    <div class="footer-container">
+      <div class="left-footer">
+        <p>2024 Joonas Koivu</p>
+        <p>Espoo, Finland</p>
+      </div>
+      <div class="right-footer">
+        <a href="#/pages/contact.html">Contact me</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
