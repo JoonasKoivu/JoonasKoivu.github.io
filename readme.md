@@ -6,7 +6,7 @@
 
 ## Linkki netissä pyörivään sivustoon
 
-https://joonaskoivu.github.io/index.html
+https://joonaskoivu.github.io
 
 
 # Osa 2
