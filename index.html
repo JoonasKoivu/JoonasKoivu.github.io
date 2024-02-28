@@ -1,109 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joonas Koivu</title>
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/modal.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/images/favicon_io/favicon.ico"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d3205356e2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="/helpers.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My portfolio</title>
-  <!-- kutsutaan tyylitiedostoa tässä -->
-  <link rel="stylesheet" href="styles/index.css" />
-  <link rel="icon" type="image/x-icon" href="/images/favicon_io/favicon.ico" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/d3205356e2.js" crossorigin="anonymous"></script>
-  <script src="/helpers.js"></script>
-</head>
-
-<body>
-  <header>
-    <div class="navigation-container">
-      <h2 class="name">Joonas Koivu</h2>
-      <span class="menuIcon" onclick="toggleNav()">
-        <i class="fa-solid fa-bars fa-xl" id="menuIcon"></i>
-      </span>
-      <nav class="navOverlay" id="navOverlay">
-        <div class="overlay-content">
-          <div class="nav-page-links">
-            <a href="index.html">About</a>
-            <a href="#/pages/skills.html">Career</a>
-            <a href="/pages/projects.html">Projects</a>
-            <a href="#/pages/contact.html">Contact</a>
+  <body>
+    <header>
+      <div class="nav-container">
+        <h2 class="name">Joonas Koivu</h2>
+        <span class="menuIcon" onclick="toggleNav()">
+          <i class="fa-solid fa-bars fa-xl" id="menuIcon"></i>
+        </span>
+        <nav class="nav" id="nav">
+          <div class="overlay-content">
+            <div class="nav-page-links">
+              <a href="#about" class="nav-link">About</a>
+              <a href="#skills" class="nav-link">Skills</a>
+              <a href="#projects" class="nav-link">Projects</a>
+              <a href="#footer" class="nav-link">Contact</a>
+              <label class="switch">
+                <input type="checkbox" id="theme-toggle" />
+                <span class="slider round">
+                  <i class="fa-solid fa-lightbulb" id="light-icon"></i>
+                  <i class="fa-solid fa-moon" id="dark-icon"></i>
+                </span>
+              </label>
+            </div>
+            <div class="socials">
+              <a href="https://www.linkedin.com/in/joonas-koivu/">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://www.twitter.com">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://www.telegram.com">
+                <i class="fab fa-telegram"></i>
+              </a>
+              <a
+                href="https://open.spotify.com/playlist/0aGwFrklxi4txlaHI6EERv?si=38117290136c4bce"
+              >
+                <i class="fab fa-spotify"></i>
+              </a>
+            </div>
           </div>
-          <div class="socials">
-            <a href="https://www.linkedin.com/in/joonas-koivu/">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://www.twitter.com">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://www.telegram.com">
-              <i class="fab fa-telegram"></i>
-            </a>
-            <a href="https://open.spotify.com/playlist/0aGwFrklxi4txlaHI6EERv?si=38117290136c4bce">
-              <i class="fab fa-spotify"></i>
-            </a>
-          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="main-container">
+      <section class="content-container" id="about">
+        <div class="hero">
+          <p><span class="hero-firstline">Software engineering, </span></p>
+          <p>with great taste</p>
         </div>
-      </nav>
+        <article>
+          <div class="sub-header-container">
+            <h2 class="sub-header">About me</h2>
+          </div>
+          <p>
+            I'm a fourth-year computer science student at Aalto University,
+            currently working at
+            <a href="https://frends.com" class="frends-link"> Frends</a>
+            as a Junior Integration Developer.
+          </p>
+          <p>
+            On my free time I enjoy music, running, gym, snowboarding, football,
+            basketball and many other sports.
+            <br />
+            Some hobbies that I would love to start include music production,
+            designing clothing and many forms of visual arts.
+            <br />
+          </p>
+          <p>
+            What comes to software, I enjoy the creative side of it. May it be
+            creative visually or while solving "harder" problems.
+          </p>
+        </article>
+      </section>
+      <section class="content-container" id="skills"> 
+        <article>
+          <div class="sub-header-container" >
+            <h2 class="sub-header">
+              🚧Here will some day be relevant information about my skills🚧
+            </h2>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
+          </p>
+        </article>
+      </section>
+      <section class="content-container" id="projects">
+        <article>
+          <div class="sub-header-container">
+            <h2 class="sub-header">
+              🚧Some day the real projects I've done will be shown off here🚧
+            </h2>
+          </div>
+          <div class="project-container">
+            <div class="project-item">
+              <div class="project-card">
+                <h3>Project Name - 1</h3>
+                <div class="project-content">
+                  <p class="project-description">
+                    Small summary of the project and it's motivation. Liirum
+                    larum doros elos sit amet.
+                  </p>
+                </div>
+                <p class="project-stack">Tech stack: React, mongoDB, NodeJS</p>
+                <hr />
+              </div>
+            </div>
+            <div class="project-item">
+              <div class="project-card">
+                <h3>Project Name but longer - 2</h3>
+                <div class="project-content">
+                  <p class="project-description">
+                    Small summary of the project and it's motivation. Liirum
+                    larum doros elos sit amet.
+                  </p>
+                </div>
+                <p class="project-stack">Tech stack: c#, .NET, SQL</p>
+                <hr />
+              </div>
+            </div>
+            <div class="project-item">
+              <div class="project-card">
+                <h3>Simple project- 1</h3>
+                <div class="project-content">
+                  <p class="project-description">
+                    Small summary of the project and it's motivation. Liirum
+                    larum doros elos sit amet.
+                  </p>
+                </div>
+                <p class="project-stack">Tech stack: scala</p>
+                <hr />
+              </div>
+            </div>
+            <div class="project-item">
+              <div class="project-card">
+                <h3>Project Name - 1</h3>
+                <div class="project-content">
+                  <p class="project-description">
+                    Small summary of the project and it's motivation. Liirum
+                    larum doros elos sit amet.
+                  </p>
+                </div>
+                <p class="project-stack">Tech stack: React, mongoDB, NodeJS</p>
+                <hr />
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="content-container" id="spotify">
+        <article>
+          <div class="sub-header-container">
+            <h2 class="sub-header">Music that fueled coding this site</h2>
+          </div>
+          <iframe
+            style="border-radius: 15px"
+            src="https://open.spotify.com/embed/playlist/0aGwFrklxi4txlaHI6EERv?utm_source=generator&theme=0"
+            width="100%"
+            height="452"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+        </article>
+      </section>
+      <section class="content-container" id="modal">
+        <div class="sub-header-container">
+          <h2 class="sub-header">Some really fancy buttons for the course</h2>
+        </div>
+        <article>
+          <div class="modal-container" id="modal-container">
+            <div class="modal" data-modal="1">
+              <h5>vautsi vau</h5>
+              <p>
+                eiköhän tälläsellä toiminnolla saa hyvin pisteitä :)
+              </p>
+              <button class="modal-close">
+                <div class="button-line"></div>
+                <div class="button-line"></div>
+              </button>
+            </div>
+            <div class="modal" data-modal="2">
+              <h5>Näkyyköhän tää edes</h5>
+              <p>
+                äh, kai tää nyt jotenkin toimii...
+              </p>
+              <button class="modal-close">
+                <div class="button-line"></div>
+                <div class="button-line"></div>
+              </button>
+            </div>
+            <div class="modal" data-modal="3">
+              <h5>Seis</h5>
+              <p>
+                Nyt loppu se nappuloiden turhanpäiväinen rämpyttely ja
+                anna ne pisteet jo!
+              </p>
+              <button class="modal-close">
+                <div class="button-line"></div>
+                <div class="button-line"></div>
+              </button>
+            </div>
+          </div>
+          <div class="example-container modal-buttons">
+            <button class="modal-button" data-modal="1">
+                Toiveikas
+            </button>
+            <button class="modal-button" data-modal="2">
+                Epätoivo
+            </button>
+            <button class="modal-button" data-modal="3">
+                Assareille
+            </button>
+        </div>
+        <p>
+          🚨🚨This area will be deleted very very soon as it's only for a course🚨🚨
+        </p>
+        </article>
+      </section>
     </div>
-  </header>
-  <div class="main-container">
-    <section class="content-container">
-      <div class="hero">
-        <p><span class="hero-firstline">Software engineering, </span></p>
-        <p> with good taste</p>
+    <footer id="footer">
+      <div class="footer-container">
+        <div class="left-footer">
+          <p>2024 Joonas Koivu</p>
+          <p>Espoo, Finland</p>
+        </div>
+        <div class="right-footer">
+          <a href="#contact">Contact me</a>
+        </div>
       </div>
-      <article>
-        <h2 class="sub-header">About me</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat.
-        </p>
-      </article>
-      <article>
-        <h2 class="sub-header">Some even more interesting facts about me</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. background in JavaScript, React, and Node.js, and I'm always eager to learn new technologies and
-          frameworks.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-          et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat.
-        </p>
-      </article>
-      <article>
-        <h2 class="sub-header">Music that fueled coding this site</h2>
-        <iframe style="border-radius:12px"
-          src="https://open.spotify.com/embed/playlist/0aGwFrklxi4txlaHI6EERv?utm_source=generator&theme=0" width="100%"
-          height="500" allowfullscreen=""
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-      </article>
-    </section>
-  </div>
-  <footer>
-    <div class="footer-container">
-      <div class="left-footer">
-        <p>2024 Joonas Koivu</p>
-        <p>Espoo, Finland</p>
-      </div>
-      <div class="right-footer">
-        <a href="#/pages/contact.html">Contact me</a>
-      </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+    <script defer src="/scripts/darkmode.js"></script>
+    <script defer src="/scripts/modal.js"></script>
+  </body>
 </html>
